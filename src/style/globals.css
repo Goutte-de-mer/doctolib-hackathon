@@ -42,6 +42,8 @@ body {
 }
 
 .blue-button {
-  @apply p-3 rounded-2xl text-blue-dark border-blue-dark   font-bold  border-2
+  @apply p-3 rounded-2xl text-blue-dark border-blue-dark   font-bold  border-2   
+
+  
 }
 
