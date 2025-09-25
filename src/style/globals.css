@@ -18,9 +18,9 @@ body {
   @apply font-montserrat bg-[linear-gradient(to_bottom,_#a0d2f8,_#e7f4fd)] p-3 min-h-dvh;
 }
 
-main {
+/* main {
   @apply pb-24;
-}
+} */
 
 .big-title {
   @apply text-2xl font-bold text-black;

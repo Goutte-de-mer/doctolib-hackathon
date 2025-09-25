@@ -6,7 +6,7 @@ import Link from "next/link";
 const Navbar = () => {
   const pathname = usePathname();
   return (
-    <nav className="bg-white py-3 px-0.5 rounded-xl grid grid-cols-5 fixed bottom-2 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] left-1/2 -translate-x-1/2 w-[95%]">
+    <nav className="bg-white py-3 px-0.5 rounded-xl grid grid-cols-5 sticky bottom-2 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] w-[95%]">
       <Link
         href={"/"}
         className={`flex flex-col items-center relative ${

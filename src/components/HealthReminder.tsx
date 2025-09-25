@@ -12,9 +12,9 @@ const HealthReminder = ({ image, title, description }: HealthReminderProps) => {
           src={image}
         />
 
-        <div className=" flex flex-col">
-          <p className=" text-brand font-bold text-sm">{title}</p>
-          <p className=" text-sm">{description}</p>
+        <div className="flex flex-col">
+          <p className="text-brand font-bold text-sm">{title}</p>
+          <p className="text-sm">{description}</p>
         </div>
 
         <Image
