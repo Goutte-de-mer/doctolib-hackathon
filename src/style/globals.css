@@ -12,12 +12,8 @@
   --color-honeywell: #ffcd4d;
 }
 
-.color-bg {
-  background: linear-gradient(to bottom, #a0d2f8, #e7f4fd);
-}
-
 body {
-  @apply font-montserrat bg-[linear-gradient(to_bottom,_#a0d2f8,_#e7f4fd)] min-h-screen;
+  @apply font-montserrat bg-[linear-gradient(to_bottom,_#a0d2f8,_#e7f4fd)] min-h-screen p-3 pb-24;
 }
 
 .big-title {
