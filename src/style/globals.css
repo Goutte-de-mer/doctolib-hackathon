@@ -10,6 +10,7 @@
   --color-primary-light-blue: #1f7bc0;
   --color-berryblush: #ff4773;
   --color-honeywell: #ffcd4d;
+  --text-tiny: 0.625rem;
 }
 
 body {
@@ -30,4 +31,8 @@ body {
 
 .blue-button {
   @apply p-3 rounded-2xl text-blue-dark border-blue-dark   font-bold  border-2;
+}
+
+.navText {
+  @apply text-tiny font-semibold text-blue-dark text-center;
 }
