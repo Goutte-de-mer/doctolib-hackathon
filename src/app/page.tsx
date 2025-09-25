@@ -1,3 +1,4 @@
+import CaregiverCard from "@/components/CaregiverCard";
 import DoctorCard from "@/components/DoctorCard";
 import SearchBar from "@/components/SearchBar";
 import doctorsData from "@/data/doctors.json"
@@ -97,7 +98,7 @@ export default function Home() {
           <DoctorCard key={index} name={doc.name} image={doc.image } speciality={doc.speciality}   />
           ))}
 
-                   <a href="#" className="blue-button" > VOIR PLUS </a>
+                   <a href="#" className="empty-button" > VOIR PLUS </a>
 
 
          </div>
@@ -111,8 +112,19 @@ export default function Home() {
 
 
 
+
+
+
+
+
+
+
+
     </div>
 
+
+
+    <CaregiverCard/>
 
     </main>
   );
