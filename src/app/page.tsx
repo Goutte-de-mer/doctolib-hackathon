@@ -19,7 +19,7 @@ export default function Home() {
           className=" p-4 rounded-2xl shadow flex flex-col justify-center items-center  "
           style={{ background: "linear-gradient(to bottom, #FFCD4D, #FFECB2)" }}
         >
-          <h1 className="md-title text-center ">Prenez un rendez-vous</h1>
+          <h1 className="md-title text-center ">Mes rendez-vous</h1>
           <img className=" w-44" src="images/calendrier.png" />
         </div>
 
@@ -27,9 +27,7 @@ export default function Home() {
           className=" p-4 rounded-2xl shadow flex flex-col justify-center items-center  "
           style={{ background: "linear-gradient(to bottom, #107ACA, #5AB0F2)" }}
         >
-          <h1 className="md-title text-center  text-white">
-            Voici vos documents
-          </h1>
+          <h1 className="md-title text-center  text-white">Mes documents</h1>
           <img className=" w-44" src="images/docs.png" />
         </div>
 
@@ -38,7 +36,7 @@ export default function Home() {
           style={{ background: "linear-gradient(to bottom, #00BFFF, #75DDFF)" }}
         >
           <h1 className="md-title text-center text-white">
-            Rentrez vos données de santé
+            Mes données de santé
           </h1>
           <img className=" w-44" src="images/data.png" />
         </div>
@@ -47,9 +45,7 @@ export default function Home() {
           className=" p-4 rounded-2xl shadow flex flex-col justify-center items-center  "
           style={{ background: "linear-gradient(to bottom, #FF4773, #FF99A1)" }}
         >
-          <h1 className="md-title text-center ">
-            Retrouvez vos rappels de traitements{" "}
-          </h1>
+          <h1 className="md-title text-center ">Mes rappels de traitements </h1>
           <img className=" w-44" src="images/medicament.png" />
         </div>
       </div>
