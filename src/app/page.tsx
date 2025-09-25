@@ -23,7 +23,7 @@ export default function Home() {
       </h1>
       <h2 className="font-bold text-xl">Vous allez bien aujourd’hui ?</h2>
 
-      <SearchBar />
+      <SearchBar redirectOnClick />
 
       <div className=" grid grid-cols-2 grid-rows-2 gap-4">
         <div className="h-44 p-2 rounded-2xl shadow flex flex-col justify-center items-center bg-gradient-to-bl from-[#FFCD4D] to-[#FFECB2] ">
