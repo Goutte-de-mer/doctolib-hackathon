@@ -18,7 +18,7 @@ const AppointmentItem = ({
 }: AppointmentProps) => {
   const bgColor = colorClassMap[color];
   return (
-    <div className="bg-white rounded-2xl overflow-hidden w-full max-w-sm">
+    <div className="bg-white rounded-2xl overflow-hidden w-full">
       <div className={`${bgColor} flex gap-7 text-white px-3 py-2.5`}>
         <div className="flex items-center gap-2">
           <Image
@@ -28,7 +28,7 @@ const AppointmentItem = ({
             height={70}
             className="w-7"
           />
-          <p className="text-base">{convertDate(date).date}</p>
+          <p className="text-sm">{convertDate(date).date}</p>
         </div>
         <div className="flex items-center gap-2">
           <Image
@@ -38,7 +38,7 @@ const AppointmentItem = ({
             height={70}
             className="w-7"
           />
-          <p>{convertDate(date).time}</p>
+          <p className="text-sm">{convertDate(date).time}</p>
         </div>
       </div>
       <div className="p-3 space-y-3">
