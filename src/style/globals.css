@@ -40,3 +40,7 @@ main {
 .navText {
   @apply text-tiny font-semibold text-blue-dark text-center;
 }
+
+.after {
+  @apply after:w-3/4 after:h-0.5 after:bg-blue-dark after:rounded-full after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-1;
+}
