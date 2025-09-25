@@ -1,0 +1,12 @@
+
+    
+    [
+  { "image": "/images/doctor.jpg", "name": "Dr. Pierre Dupont", "speciality": "Cardiologue" },
+  { "image": "/images/doctor.jpg", "name": "Dr. Marie Leclerc", "speciality": "Dermatologue" },
+  { "image": "/images/doctor.jpg", "name": "Dr. Alain Martin", "speciality": "Pédiatre" },
+  { "image": "/images/doctor.jpg", "name": "Dr. Sophie Bernard", "speciality": "Neurologue" },
+  { "image": "/images/doctor.jpg", "name": "Dr. Jean Moreau", "speciality": "Chirurgien" },
+  { "image": "/images/doctor.jpg", "name": "Dr. Claire Dubois", "speciality": "Ophtalmologue" },
+  { "image": "/images/doctor.jpg", "name": "Dr. Lucie Petit", "speciality": "Gynécologue" },
+  { "image": "/images/doctor.jpg", "name": "Dr. Marc Fontaine", "speciality": "Psychiatre" }
+]
