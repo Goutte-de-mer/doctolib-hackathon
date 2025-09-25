@@ -14,7 +14,7 @@
 }
 
 body {
-  @apply font-montserrat bg-[linear-gradient(to_bottom,_#a0d2f8,_#e7f4fd)] min-h-screen p-3 pb-24;
+  @apply font-montserrat bg-[linear-gradient(to_bottom,_#a0d2f8,_#e7f4fd)] p-3 pb-24 min-h-dvh;
 }
 
 .big-title {
