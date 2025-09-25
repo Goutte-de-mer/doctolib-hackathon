@@ -5,4 +5,56 @@
   --color-brand: #107aca;
   --font-title: "Montserrat", sans-serif; /* bold */
   --font-body: "Roboto", sans-serif; /* regular & bold */
+  --color-yellow : #FFCB58;
+  --color-blue-dark : #0F294A;
+
 }
+
+
+
+
+
+.color-bg {
+  background: linear-gradient(to bottom, #A0D2F8, #E7F4FD);
+
+}
+
+
+body {
+  @apply  font-body 
+}
+
+
+
+.big-title{
+@apply text-3xl font-bold text-black ;
+}
+
+
+
+.md-title {
+  @apply text-2xl font-bold;
+}
+
+.blue-text{
+@apply    text-brand  ;
+
+}
+
+.blue-button {
+  @apply p-3 rounded-2xl text-blue-dark border-blue-dark   font-bold  border-2   ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
