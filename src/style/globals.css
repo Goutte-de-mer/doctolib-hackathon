@@ -3,58 +3,35 @@
 
 @theme {
   --color-brand: #107aca;
-  --font-title: "Montserrat", sans-serif; /* bold */
-  --font-body: "Roboto", sans-serif; /* regular & bold */
-  --color-yellow : #FFCB58;
-  --color-blue-dark : #0F294A;
-
+  --font-montserrat: "Montserrat", sans-serif; /* bold */
+  --font-roboto: "Roboto", sans-serif; /* regular & bold */
+  --color-yellow: #ffcb58;
+  --color-blue-dark: #0f294a;
+  --color-primary-light-blue: #1f7bc0;
+  --color-berryblush: #ff4773;
+  --color-honeywell: #ffcd4d;
 }
-
-
-
-
 
 .color-bg {
-  background: linear-gradient(to bottom, #A0D2F8, #E7F4FD);
-
+  background: linear-gradient(to bottom, #a0d2f8, #e7f4fd);
 }
-
 
 body {
-  @apply  font-body 
+  @apply font-montserrat bg-[linear-gradient(to_bottom,_#a0d2f8,_#e7f4fd)];
 }
 
-
-
-.big-title{
-@apply text-3xl font-bold text-black ;
+.big-title {
+  @apply text-3xl font-bold text-black;
 }
-
-
 
 .md-title {
   @apply text-2xl font-bold;
 }
 
-.blue-text{
-@apply    text-brand  ;
-
+.blue-text {
+  @apply text-brand;
 }
 
 .blue-button {
-  @apply p-3 rounded-2xl text-blue-dark border-blue-dark   font-bold  border-2   ;
-
-
-
-
-
-
-
-
-
-
-
-
-
+  @apply p-3 rounded-2xl text-blue-dark border-blue-dark   font-bold  border-2;
 }
-

@@ -1,0 +1,84 @@
+import Image from "next/image";
+import AppointmentProps from "@/types/appointmentProps";
+import { convertDate } from "@/utils/convertDate";
+
+const colorClassMap: { [key: string]: string } = {
+  blue: "bg-primary-light-blue",
+  pink: "bg-berryblush",
+  yellow: "bg-honeywell",
+};
+
+const AppointmentItem = ({
+  color,
+  date,
+  doctorName,
+  doctorSpecialty,
+  appointmentType,
+  patientName,
+}: AppointmentProps) => {
+  const bgColor = colorClassMap[color];
+  return (
+    <div className="bg-white rounded-2xl overflow-hidden w-full max-w-sm">
+      <div className={`${bgColor} flex gap-7 text-white px-3 py-2.5`}>
+        <div className="flex items-center gap-2">
+          <Image
+            src={"/calendar-day.png"}
+            alt="calendrier icone"
+            width={70}
+            height={70}
+            className="w-7"
+          />
+          <p className="text-base">{convertDate(date).date}</p>
+        </div>
+        <div className="flex items-center gap-2">
+          <Image
+            src={"/clock.png"}
+            alt="horloge icone"
+            width={70}
+            height={70}
+            className="w-7"
+          />
+          <p>{convertDate(date).time}</p>
+        </div>
+      </div>
+      <div className="p-3 space-y-3">
+        <div className="flex items-center gap-6">
+          <Image
+            src={"/clock.png"}
+            alt="horloge icone"
+            width={50}
+            height={50}
+            className="rounded-full"
+          />
+          <p>
+            <span className="font-semibold">{doctorName}</span>
+            <br />
+            <span>{doctorSpecialty}</span>
+          </p>
+        </div>
+        <div className="flex items-center gap-2">
+          <Image
+            src={"/stethoscope.png"}
+            alt="stethoscope icone"
+            width={70}
+            height={70}
+            className="w-7"
+          />
+          <p>{appointmentType}</p>
+        </div>
+      </div>
+      <div className="flex items-center gap-2 px-3 border-t-2 border-black/20 py-2.5">
+        <Image
+          src={"/user.png"}
+          alt="utilisateur icone"
+          width={70}
+          height={70}
+          className="w-7"
+        />
+        <p>{patientName}</p>
+      </div>
+    </div>
+  );
+};
+
+export default AppointmentItem;
