@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "@/style/globals.css";
+import Header from "@/components/layout/Header";
 
 export const metadata: Metadata = {
   title: "Doctolib : Prenez rendez-vous en ligne chez un soignant",
@@ -17,7 +18,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+     
+      <body className="color-bg p-8">
+
+         <Header></Header>
+        
+        
+        {children}
+        
+        </body>
     </html>
   );
 }
