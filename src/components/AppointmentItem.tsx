@@ -44,11 +44,11 @@ const AppointmentItem = ({
       <div className="p-3 space-y-3">
         <div className="flex items-center gap-6">
           <Image
-            src={"/clock.png"}
+            src={"/doctor_04.png"}
             alt="horloge icone"
             width={50}
             height={50}
-            className="rounded-full"
+            className="rounded-full w-12 h-12 object-cover"
           />
           <p>
             <span className="font-semibold">{doctorName}</span>
