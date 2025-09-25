@@ -10,7 +10,7 @@
   --color-primary-light-blue: #1f7bc0;
   --color-berryblush: #f0537a;
   --color-honeywell: #ffcb58;
-  --color-gray-light: #EDF7FF;
+  --color-gray-light: #edf7ff;
   --text-tiny: 0.625rem;
 }
 
@@ -23,11 +23,11 @@ main {
 }
 
 .big-title {
-  @apply text-3xl font-bold text-black;
+  @apply text-2xl font-bold text-black;
 }
 
 .md-title {
-  @apply text-xl font-bold;
+  @apply text-lg font-bold;
 }
 
 .blue-text {

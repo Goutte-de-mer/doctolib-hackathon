@@ -40,8 +40,18 @@ const Navbar = () => {
         />
         <p className="navText">Rendez-vous</p>
       </Link>
-      <Link href={"/"} className={`flex flex-col items-center`}>
-        <Image src={`/heart.png`} alt="" width={25} height={25} />
+      <Link
+        href={"/health"}
+        className={`flex flex-col items-center relative ${
+          pathname === "/health" ? "after" : ""
+        }`}
+      >
+        <Image
+          src={`${pathname === "/health" ? "/heart-yellow.png" : "/heart.png"}`}
+          alt=""
+          width={25}
+          height={25}
+        />
         <p className="navText">Santé</p>
       </Link>
       <Link href={"/"} className={`flex flex-col items-center`}>
