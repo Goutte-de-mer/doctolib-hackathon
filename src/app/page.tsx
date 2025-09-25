@@ -8,20 +8,20 @@ export default function Home() {
 
   return (
     <main className="flex flex-col min-h-screen  items-center gap-8 py-9 ">
-   <h1 className="big-title text-center">Bienvenue Caroline, <br/>ravi de vous revoir ! <br/> <br /> Vous allez bien aujourd’hui ?</h1>
+   <h1 className="big-title text-center ">Bienvenue Caroline, <br/>ravi de vous revoir ! <br/> <br /> Vous allez bien aujourd’hui ?</h1>
 
    <SearchBar/>
 
 
 
 
-  <div className=" grid grid-cols-2 gap-4">
+  <div className=" xs:grid xs:grid-cols-2 gap-4 flex flex-col ">
 
     <div className=" p-4 rounded-2xl shadow flex flex-col justify-center items-center  "   style={{ background: "linear-gradient(to bottom, #FFCD4D, #FFECB2)" }}>
 
 
-      <h1 className="md-title text-center ">Prenez un rendez-vous</h1>
-      <img className=" w-44" src="images/calendrier.png" />
+      <h1 className="md-title text-center  ">Prenez un rendez-vous</h1>
+      <img className=" xs:w-44  w-24 " src="images/calendrier.png" />
 
 
 
@@ -32,7 +32,7 @@ export default function Home() {
 
 
       <h1 className="md-title text-center  text-white">Voici vos documents</h1>
-      <img className=" w-44" src="images/docs.png" />
+      <img className=" xs:w-44  w-24 " src="images/docs.png" />
 
 
 
@@ -43,7 +43,7 @@ export default function Home() {
 
 
       <h1 className="md-title text-center text-white">Rentrez vos données de santé</h1>
-      <img className=" w-44" src="images/data.png" />
+      <img className=" xs:w-44  w-24 " src="images/data.png" />
 
 
 
@@ -53,7 +53,7 @@ export default function Home() {
 
 
       <h1 className="md-title text-center ">Retrouvez vos rappels de traitements </h1>
-      <img className=" w-44" src="images/medicament.png" />
+      <img className=" xs:w-44  w-24 " src="images/medicament.png" />
 
 
 
@@ -74,7 +74,7 @@ export default function Home() {
 
 
 
-     <div className=" flex flex-col items-start w-full">
+     <div className=" flex flex-col xs:items-start items-center w-full">
          <h1 className="big-title text-center text-blue-dark">Vos prochains rendez-vous</h1>
 
 
@@ -86,7 +86,7 @@ export default function Home() {
 
 
     
-    <div className=" flex flex-col items-start w-full gap-5">
+    <div className=" flex flex-col xs:items-start items-center w-full gap-5">
          <h1 className="big-title text-center text-blue-dark">Vos practiciens les plus vus</h1>
 
          <div  className=" w-full flex flex-col items-center gap-3">

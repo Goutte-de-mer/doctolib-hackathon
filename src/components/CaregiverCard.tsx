@@ -8,7 +8,7 @@ export default function CaregiverCard () {
         <img  className=" w-52 " src="/images/caregiver.png"/>
 
 
-        <h1 className=" text-2xl text-white font-bold" >Vous êtes soignant ?</h1>
+        <h1 className=" xs:text-2xl  text-white font-bold text-center" >Vous êtes soignant ?</h1>
 
 
 

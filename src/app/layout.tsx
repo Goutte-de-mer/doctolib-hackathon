@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
      
-      <body className="color-bg p-8">
+      <body className="color-bg p-8  flex flex-col gap-8">
 
          <Header></Header>
         
