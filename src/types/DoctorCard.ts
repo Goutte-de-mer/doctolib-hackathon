@@ -1,6 +1,5 @@
 export interface DoctorCardProps {
-
-    image :string ;
-    name : string ;
-    speciality : string 
-} 
+  image: string;
+  name: string;
+  specialty: string;
+}

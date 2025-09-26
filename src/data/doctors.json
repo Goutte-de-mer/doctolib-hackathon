@@ -1,12 +1,74 @@
-
-    
-    [
-  { "image": "/images/doctor.jpg", "name": "Dr. Pierre Dupont", "speciality": "Cardiologue" },
-  { "image": "/images/doctor.jpg", "name": "Dr. Marie Leclerc", "speciality": "Dermatologue" },
-  { "image": "/images/doctor.jpg", "name": "Dr. Alain Martin", "speciality": "Pédiatre" },
-  { "image": "/images/doctor.jpg", "name": "Dr. Sophie Bernard", "speciality": "Neurologue" },
-  { "image": "/images/doctor.jpg", "name": "Dr. Jean Moreau", "speciality": "Chirurgien" },
-  { "image": "/images/doctor.jpg", "name": "Dr. Claire Dubois", "speciality": "Ophtalmologue" },
-  { "image": "/images/doctor.jpg", "name": "Dr. Lucie Petit", "speciality": "Gynécologue" },
-  { "image": "/images/doctor.jpg", "name": "Dr. Marc Fontaine", "speciality": "Psychiatre" }
+[
+  {
+    "image": "/images/doctor.jpg",
+    "name": "Dr. Pierre Dupont",
+    "specialty": "Cardiologue",
+    "address": "12 rue de la Santé, Paris 13e",
+    "phone": "01 45 67 89 00",
+    "availability": ["2025-10-03T14:30:00", "2025-10-05T10:00:00"],
+    "acceptsNewPatients": true
+  },
+  {
+    "image": "/images/doctor.jpg",
+    "name": "Dr. Marie Leclerc",
+    "specialty": "Dermatologue",
+    "address": "8 avenue de la République, Paris 11e",
+    "phone": "01 43 56 78 91",
+    "availability": ["2025-10-02T09:00:00"],
+    "acceptsNewPatients": false
+  },
+  {
+    "image": "/images/doctor.jpg",
+    "name": "Dr. Alain Martin",
+    "specialty": "Pédiatre",
+    "address": "5 boulevard Haussmann, Paris 9e",
+    "phone": "01 55 66 77 88",
+    "availability": [],
+    "acceptsNewPatients": true
+  },
+  {
+    "image": "/images/doctor.jpg",
+    "name": "Dr. Sophie Bernard",
+    "specialty": "Neurologue",
+    "address": "22 rue du Faubourg Saint-Antoine, Paris 12e",
+    "phone": "01 40 30 20 10",
+    "availability": ["2025-10-03T16:45:00", "2025-10-06T11:15:00"],
+    "acceptsNewPatients": false
+  },
+  {
+    "image": "/images/doctor.jpg",
+    "name": "Dr. Jean Moreau",
+    "specialty": "Chirurgien",
+    "address": "3 rue de la Paix, Paris 2e",
+    "phone": "01 41 42 43 44",
+    "availability": ["2025-10-04T13:00:00"],
+    "acceptsNewPatients": true
+  },
+  {
+    "image": "/images/doctor.jpg",
+    "name": "Dr. Claire Dubois",
+    "specialty": "Ophtalmologue",
+    "address": "15 rue Lafayette, Paris 9e",
+    "phone": "01 50 51 52 53",
+    "availability": [],
+    "acceptsNewPatients": false
+  },
+  {
+    "image": "/images/doctor.jpg",
+    "name": "Dr. Lucie Petit",
+    "specialty": "Gynécologue",
+    "address": "17 avenue Mozart, Paris 16e",
+    "phone": "01 54 55 56 57",
+    "availability": ["2025-10-07T10:30:00", "2025-10-08T15:00:00"],
+    "acceptsNewPatients": true
+  },
+  {
+    "image": "/images/doctor.jpg",
+    "name": "Dr. Marc Fontaine",
+    "specialty": "Psychiatre",
+    "address": "10 rue Oberkampf, Paris 11e",
+    "phone": "01 60 61 62 63",
+    "availability": [],
+    "acceptsNewPatients": true
+  }
 ]

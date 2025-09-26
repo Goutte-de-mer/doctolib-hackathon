@@ -1,6 +1,6 @@
 export interface HistoryCardProps {
   image: string;
   name: string;
-  speciality: string;
+  specialty: string;
   city: string;
 }

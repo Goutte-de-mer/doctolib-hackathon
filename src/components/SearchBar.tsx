@@ -4,15 +4,17 @@ import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 
 type Props = {
+  searchQuery: string;
+  setSearchQuery: (val: string) => void;
   autoFocus?: boolean;
-  redirectOnClick?: boolean;
 };
 
 export default function SearchBar({
+  searchQuery,
+  setSearchQuery,
   autoFocus = false,
-  redirectOnClick = false,
 }: Props) {
-  const [searchQuery, setSearchQuery] = useState<string>("");
+  // const [searchQuery, setSearchQuery] = useState<string>("");
   const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -21,12 +23,6 @@ export default function SearchBar({
       inputRef.current.focus();
     }
   }, [autoFocus]);
-
-  const handleClick = () => {
-    if (redirectOnClick) {
-      router.push("/search");
-    }
-  };
 
   // const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
   //   if (e.key === "Enter") {
@@ -39,10 +35,7 @@ export default function SearchBar({
   // };
 
   return (
-    <div
-      className=" flex bg-white rounded-2xl py-4 px-5 w-full gap-4"
-      onClick={handleClick}
-    >
+    <div className=" flex bg-white rounded-2xl py-4 px-5 w-full gap-4">
       <Image
         width={60}
         height={60}

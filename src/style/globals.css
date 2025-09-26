@@ -15,12 +15,12 @@
 }
 
 body {
-  @apply font-montserrat bg-[linear-gradient(to_bottom,_#a0d2f8,_#e7f4fd)] p-3 min-h-dvh;
+  @apply font-montserrat bg-[linear-gradient(to_bottom,_#a0d2f8,_#e7f4fd)] p-3 min-h-dvh flex flex-col;
 }
 
-/* main {
-  @apply pb-24;
-} */
+main {
+  @apply flex-1;
+}
 
 .big-title {
   @apply text-2xl font-bold text-black;

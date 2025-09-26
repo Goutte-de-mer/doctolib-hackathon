@@ -1,7 +1,7 @@
 import { DoctorCardProps } from "@/types/DoctorCard";
 import Image from "next/image";
 
-const DoctorCard = ({ image, name, speciality }: DoctorCardProps) => {
+const DoctorCard = ({ image, name, specialty }: DoctorCardProps) => {
   return (
     <div className="p-3 bg-white   rounded-2xl shadow  flex w-full  gap-5  items-center ">
       <Image
@@ -13,7 +13,7 @@ const DoctorCard = ({ image, name, speciality }: DoctorCardProps) => {
       />
       <div className=" flex flex-col ">
         <h1 className=" font-bold">{name}</h1>
-        <p>{speciality}</p>
+        <p>{specialty}</p>
       </div>
     </div>
   );

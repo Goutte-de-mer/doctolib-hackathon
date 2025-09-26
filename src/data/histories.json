@@ -1,10 +1,50 @@
 [
-  { "image": "/images/doctors/doctor1.jpg", "name": "Dr. Alice Dupont", "speciality": "Neurologue", "city": "Paris" },
-  { "image": "/images/doctors/doctor2.jpg", "name": "Dr. Pierre Leroy", "speciality": "Dermatologue", "city": "Lyon" },
-  { "image": "/images/doctors/doctor3.jpg" ,"name": "Dr. Claire Martin", "speciality": "Pédiatre", "city": "Marseille" },
-  { "image": "/images/doctors/doctor4.jpg", "name": "Dr. Marc Bernard", "speciality": "Cardiologue", "city": "Toulouse" },
-  { "image": "/images/doctors/doctor5.jpg", "name": "Dr. Sophie Fontaine", "speciality": "Psychiatre", "city": "Nice" },
-  { "image": "/images/doctors/doctor6.jpg", "name": "Dr. Jean Dubois", "speciality": "Chirurgien", "city": "Nantes" },
-  { "image": "/images/doctors/doctor3.jpg", "name": "Dr. Lucie Moreau", "speciality": "Ophtalmologue", "city": "Strasbourg" },
-  { "image": "/images/doctors/doctor1.jpg", "name": "Dr. Nicolas Petit", "speciality": "Gynécologue", "city": "Bordeaux" }
+  {
+    "image": "/images/doctors/doctor1.jpg",
+    "name": "Dr. Alice Dupont",
+    "specialty": "Neurologue",
+    "city": "Paris"
+  },
+  {
+    "image": "/images/doctors/doctor2.jpg",
+    "name": "Dr. Pierre Leroy",
+    "specialty": "Dermatologue",
+    "city": "Lyon"
+  },
+  {
+    "image": "/images/doctors/doctor3.jpg",
+    "name": "Dr. Claire Martin",
+    "specialty": "Pédiatre",
+    "city": "Marseille"
+  },
+  {
+    "image": "/images/doctors/doctor4.jpg",
+    "name": "Dr. Marc Bernard",
+    "specialty": "Cardiologue",
+    "city": "Toulouse"
+  },
+  {
+    "image": "/images/doctors/doctor5.jpg",
+    "name": "Dr. Sophie Fontaine",
+    "specialty": "Psychiatre",
+    "city": "Nice"
+  },
+  {
+    "image": "/images/doctors/doctor6.jpg",
+    "name": "Dr. Jean Dubois",
+    "specialty": "Chirurgien",
+    "city": "Nantes"
+  },
+  {
+    "image": "/images/doctors/doctor3.jpg",
+    "name": "Dr. Lucie Moreau",
+    "specialty": "Ophtalmologue",
+    "city": "Strasbourg"
+  },
+  {
+    "image": "/images/doctors/doctor1.jpg",
+    "name": "Dr. Nicolas Petit",
+    "specialty": "Gynécologue",
+    "city": "Bordeaux"
+  }
 ]
