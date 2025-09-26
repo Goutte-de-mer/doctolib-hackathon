@@ -5,7 +5,6 @@ import Image from "next/image";
 import Appointment from "@/types/appointment";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 
-const colors = ["blue", "pink", "yellow"];
 export default function Appointments() {
   const now = new Date();
 
@@ -46,20 +45,12 @@ export default function Appointments() {
         <TabPanels>
           <TabPanel className={"space-y-5"}>
             {futureAppointments.map((appointment: Appointment, i: number) => (
-              <AppointmentItem
-                key={i}
-                color={colors[i % colors.length]}
-                {...appointment}
-              />
+              <AppointmentItem key={i} {...appointment} />
             ))}
           </TabPanel>
           <TabPanel className="space-y-5">
             {pastAppointments.map((appointment: Appointment, i: number) => (
-              <AppointmentItem
-                key={i}
-                color={colors[i % colors.length]}
-                {...appointment}
-              />
+              <AppointmentItem key={i} {...appointment} />
             ))}
           </TabPanel>
         </TabPanels>

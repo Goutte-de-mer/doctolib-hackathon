@@ -1,5 +1,4 @@
 export default interface AppointmentProps {
-  color: string;
   date: string;
   doctorName: string;
   doctorSpecialty: string;

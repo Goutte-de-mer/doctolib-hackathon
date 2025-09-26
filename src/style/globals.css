@@ -12,6 +12,7 @@
   --color-honeywell: #ffcb58;
   --color-gray-light: #edf7ff;
   --text-tiny: 0.625rem;
+  --breakpoint-xxs: 29.375rem;
 }
 
 body {
@@ -23,11 +24,11 @@ main {
 }
 
 .big-title {
-  @apply text-2xl font-bold text-black;
+  @apply text-2xl font-bold;
 }
 
 .md-title {
-  @apply text-lg font-bold;
+  @apply text-sm font-bold;
 }
 
 .blue-text {
@@ -35,7 +36,7 @@ main {
 }
 
 .blue-button {
-  @apply p-3 rounded-2xl text-blue-dark border-blue-dark   font-bold  border-2;
+  @apply p-3 rounded-xl text-blue-dark border-blue-dark text-sm font-bold border-2 uppercase;
 }
 
 .navText {

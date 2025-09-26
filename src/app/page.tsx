@@ -24,16 +24,14 @@ export default function Home() {
   // };
 
   return (
-    <main className="flex flex-col min-h-screen  items-center gap-8 py-9 ">
-      <h1 className="big-title text-center">
-        Bienvenue Caroline, <br />
-        ravi de vous revoir !
+    <main className="flex flex-col min-h-screen  items-center gap-12 pt-9 ">
+      <h1 className="big-title text-center text-blue-dark">
+        Mon <span className="text-primary-light-blue">compagnon</span> de santé
       </h1>
-      <h2 className="font-bold text-xl">Vous allez bien aujourd’hui ?</h2>
 
       <Link
         href={"/search"}
-        className=" flex bg-white rounded-2xl py-4 px-5 w-full gap-4"
+        className=" flex bg-white rounded-xl py-3 px-4 w-full gap-4 shadow-md"
       >
         <Image
           width={60}
@@ -45,37 +43,31 @@ export default function Home() {
 
         <input
           type="text"
-          className="flex-1 blue-text focus-visible:outline-none"
-          placeholder="Cherchez un médecin, un soin, un établissement de santé ..."
+          className="flex-1 blue-text focus-visible:outline-none placeholder:text-sm"
+          placeholder="Cherchez un médecin, un soin..."
         />
       </Link>
 
-      <div className=" grid grid-cols-2 grid-rows-2 gap-4">
-        <div className="h-44 p-2 rounded-2xl shadow flex flex-col justify-center items-center bg-gradient-to-bl from-[#FFCD4D] to-[#FFECB2] ">
-          <h1 className="md-title text-center text-blue-dark">
-            Mes rendez-vous
-          </h1>
-          <Image
-            alt="icone"
-            width={70}
-            height={70}
-            className="w-24"
-            src="/images/calendrier.png"
-          />
-        </div>
+      <div className=" flex flex-col items-start w-full">
+        <h1 className="text-xl font-bold text-center text-blue-dark mb-3.5">
+          Mon prochain rendez-vous
+        </h1>
+        <AppointmentItem {...nextAppointment} />
+      </div>
 
-        <div className="h-44 p-2 rounded-2xl shadow flex flex-col justify-center items-center bg-gradient-to-bl from-[#107ACA] to-[#5AB0F2]">
+      <div className=" grid grid-cols-2 xxs:grid-cols-3 gap-4">
+        <div className=" p-3 rounded-2xl shadow flex flex-col justify-center items-center bg-gradient-to-bl from-[#107ACA] to-[#5AB0F2]">
           <h1 className="md-title text-center text-white">Mes documents</h1>
           <Image
             alt="icone"
             width={70}
             height={70}
-            className="w-24"
+            className="w-20"
             src="/images/docs.png"
           />
         </div>
 
-        <div className="h-44 p-2 rounded-2xl shadow flex flex-col justify-center items-center bg-gradient-to-bl from-[#00BFFF] to-[#75DDFF]">
+        <div className=" p-3 rounded-2xl shadow flex flex-col justify-center items-center bg-gradient-to-bl from-[#00BFFF] to-[#75DDFF]">
           <h1 className="md-title text-center text-white">
             Mes données de santé
           </h1>
@@ -83,12 +75,12 @@ export default function Home() {
             alt="icone"
             width={70}
             height={70}
-            className=" w-24"
+            className=" w-20"
             src="/images/data.png"
           />
         </div>
 
-        <div className="h-44 p-2 rounded-2xl shadow flex flex-col justify-center items-center bg-gradient-to-bl from-[#FF4773] to-[#FF99A1]">
+        <div className=" p-3 rounded-2xl shadow flex flex-col justify-center items-center bg-gradient-to-bl from-[#FF4773] to-[#FF99A1] col-span-2 xxs:col-span-1">
           <h1 className="md-title text-center text-blue-dark">
             Mes rappels de traitements{" "}
           </h1>
@@ -96,22 +88,15 @@ export default function Home() {
             alt="icone"
             width={70}
             height={70}
-            className="w-24"
+            className="w-20"
             src="/images/medicament.png"
           />
         </div>
       </div>
 
-      <div className=" flex flex-col items-start w-full">
-        <h1 className="big-title text-center text-blue-dark mb-3.5">
-          Vos prochains rendez-vous
-        </h1>
-        <AppointmentItem color="blue" {...nextAppointment} />
-      </div>
-
       <div className=" flex flex-col items-start w-full gap-5">
-        <h1 className="big-title text-center text-blue-dark">
-          Vos practiciens les plus vus
+        <h1 className="text-xl font-bold text-center text-blue-dark">
+          Mes soignants les plus vus
         </h1>
 
         <div className=" w-full flex flex-col items-center gap-3">
@@ -125,8 +110,7 @@ export default function Home() {
           ))}
 
           <Link href="#" className="blue-button">
-            {" "}
-            VOIR PLUS{" "}
+            voir plus
           </Link>
         </div>
       </div>

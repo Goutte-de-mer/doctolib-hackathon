@@ -2,24 +2,25 @@ import Image from "next/image";
 import AppointmentProps from "@/types/appointmentProps";
 import { convertDate } from "@/utils/convertDate";
 
-const colorClassMap: { [key: string]: string } = {
-  blue: "bg-primary-light-blue",
-  pink: "bg-berryblush",
-  yellow: "bg-honeywell",
-};
-
 const AppointmentItem = ({
-  color,
   date,
   doctorName,
   doctorSpecialty,
   appointmentType,
   patientName,
 }: AppointmentProps) => {
-  const bgColor = colorClassMap[color];
+  const appointmentDate = new Date(date);
+  const now = new Date();
+
   return (
     <div className="bg-white rounded-2xl overflow-hidden w-full">
-      <div className={`${bgColor} flex gap-7 text-white px-3 py-2.5`}>
+      <div
+        className={`flex gap-7 text-white px-3 py-2.5 bg-gradient-to-tr ${
+          appointmentDate < now
+            ? "from-[#5AB0F2] to-brand"
+            : "from-[#FFECB2] to-[#FFCD4D]"
+        }`}
+      >
         <div className="flex items-center gap-2">
           <Image
             src={"/calendar-day.png"}
